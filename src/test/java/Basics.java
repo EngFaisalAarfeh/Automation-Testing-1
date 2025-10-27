@@ -190,17 +190,12 @@ public class Basics {
                 driver.findElement(with(By.tagName("input")).below(username));
         passwordField.sendKeys("Faisal_Password");
 
-
-
         //WebElement loginButton = driver.findElement(By.tagName("button"));
-
 
         Thread.sleep(50000);
 
-
         driver.quit();
     }
-
 
 
     @Test
@@ -210,27 +205,15 @@ public class Basics {
 
         WebElement password = driver.findElement(By.id("password"));
 
-        WebElement userName =
-                driver.findElement(with(By.tagName("input")).above(password));
+        WebElement userName = driver.findElement(with(By.tagName("input")).above(password));
         userName.sendKeys("Above Password");
 
         // WebElement loginButton = driver.findElement(By.tagName("button"));
 
         Thread.sleep(50000);
 
-        driver.quit();
+        driver.quit(); // Faisal
     }
 
 
-
-
 }
-
-
-
-
-
-
-
-
-
